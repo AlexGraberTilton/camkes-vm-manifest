@@ -26,7 +26,7 @@ Change the code:
     `capdl-loader-experimental-image-ia32-pc99`. Copy them to, say
     `/home/gvrbot/seL4/`
  3. Open file `/boot/grub/grub.cfg`, find `set timeout=0`, change it to `set
-    timeout=5`
+    timeout=5` (Note: due to a bug where the os-prober sets the timeout to 0, all changes must be made in /boot/grub/grub.cfg, changing /etc/default/grub and doing update-grub will not work).
 
 ## 4. Connect GVR-BOT to host
 
